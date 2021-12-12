@@ -276,7 +276,24 @@ public class MyClass implements MyInterface {
     }
 }
 ```
+MyClassTest.java
+```java
+public class MyClassTest {
+    public static void main(String[] args) {
+        MyClass mClass = new MyClass();
+        X xClass = mClass;
+        xClass.x();
 
+        Y yClass = mClass;
+        yClass.y();
+
+        MyClass iClass = mClass;
+        iClass.x();
+        iClass.y();
+        iClass.myMethod();
+    }
+}
+```
 ## 클래스 상속과 인터페이스 구현 함께 쓰기
 - 실무에서 프레임워크나 오픈소스와 함께 연동되는 구현을 하게 되면 클래스 상속과 인터페이스의 구현을 같이 사용하는 경우가 많음 
 
