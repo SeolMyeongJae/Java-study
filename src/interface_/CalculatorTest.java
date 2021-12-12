@@ -16,5 +16,10 @@ public class CalculatorTest {
         // showInfo는 CmpleteCalc에서 선언되었기 때문에 Calc형 변수에서는 사용할 수 없다
         // calc.showInfo();
         calc2.showInfo();
+
+        calc.description();
+
+        int [] arr = {1,2,3,4,5};
+        System.out.println(Calc.total(arr));
     }
 }
