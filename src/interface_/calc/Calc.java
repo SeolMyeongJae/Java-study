@@ -1,4 +1,4 @@
-package interface_;
+package interface_.calc;
 
 public interface Calc {
     double PI = 3.14;
